@@ -10,6 +10,9 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = BC8B01940F2E43CE000ECEFE /* Developer */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Developer */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Developer */,
+		);
 		codeSenseManager = BC8B01A10F2E43D2000ECEFE /* Code sense */;
 		executables = (
 			BC8B01940F2E43CE000ECEFE /* Developer */,
