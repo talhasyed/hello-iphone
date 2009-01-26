@@ -20,19 +20,25 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+	DeveloperAppDelegate *appDelegate = (DeveloperAppDelegate *)[[UIApplication sharedApplication] delegate];
+	return appDelegate.developers.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *MyIdentifier = @"MyIdentifier";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:MyIdentifier] autorelease];
     }
+	
+	DeveloperAppDelegate *appDelegate = (DeveloperAppDelegate *) [[UIApplication sharedApplication] delegate];
+	Developer *d = (Developer *)[appDelegate.developers objectAtIndex:indexPath.row];
     
+	[cell setText:d.name];
+	
     // Set up the cell
     return cell;
 }
@@ -40,6 +46,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic -- create and push a new view controller
+	DeveloperAppDelegate *appDelegate = (DeveloperAppDelegate *)[[UIApplication sharedApplication] delegate];
+	Developer *developer = (Developer *)[appDelegate.developers objectAtIndex:indexPath.row];
+	
+	if (self.developerView == nil) {
+		DeveloperViewController *viewController = [[DeveloperViewController alloc] initWithNibName:@"DeveloperViewController" bundle:[NSBundle mainBundle]];
+		self.developerView = viewController;
+		[viewController release];
+	}
+	
+	[self.navigationController pushViewController:self.developerView animated:YES];
+	self.developerView.title = [developer name]; // TODO check if you can do developer.name
+	[self.developerView.developerDescription setText:[developer description]];
 }
 
 
