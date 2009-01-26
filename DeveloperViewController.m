@@ -10,6 +10,7 @@
 
 
 @implementation DeveloperViewController
+@synthesize developerDescription;
 
 /*
 // Override initWithNibName:bundle: to load the view using a nib file then perform additional customization that is not appropriate for viewDidLoad.

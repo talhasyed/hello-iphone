@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DeveloperViewController.h"
 
 @interface RootViewController : UITableViewController {
+	DeveloperViewController *developerView;
 }
+
+@property(nonatomic, retain) DeveloperViewController *developerView;
 
 @end

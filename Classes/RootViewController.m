@@ -12,7 +12,7 @@
 
 
 @implementation RootViewController
-// @synthesize developerView;
+@synthesize developerView;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
