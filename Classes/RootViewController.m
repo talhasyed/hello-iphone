@@ -8,9 +8,11 @@
 
 #import "RootViewController.h"
 #import "DeveloperAppDelegate.h"
+#import "Developer.h"
 
 
 @implementation RootViewController
+@synthesize developerView;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -41,13 +43,12 @@
 }
 
 
-/*
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    [super viewDidLoad]; // should this line be commented out;
     // Uncomment the following line to add the Edit button to the navigation bar.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	self.title = @"Developers";
 }
-*/
 
 
 /*

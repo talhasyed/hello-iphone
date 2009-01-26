@@ -14,6 +14,7 @@
 
 @synthesize window;
 @synthesize navigationController;
+@synthesize developers;
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
