@@ -12,6 +12,8 @@
     
 	IBOutlet UIWindow *window;
 	IBOutlet UINavigationController *navigationController;
+	
+	NSMutableArray *developers;
 }
 
 @property (nonatomic, retain) UIWindow *window;

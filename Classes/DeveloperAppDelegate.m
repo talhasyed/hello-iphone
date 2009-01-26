@@ -8,7 +8,7 @@
 
 #import "DeveloperAppDelegate.h"
 #import "RootViewController.h"
-
+#import "Developer.h"
 
 @implementation DeveloperAppDelegate
 
@@ -18,6 +18,12 @@
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
+	
+	Developer *talha = [[Developer alloc] initWithName:@"Talha" description:@"Milton, ON, Canada"];
+	Developer *lenard = [[Developer alloc] initWithName:@"Lenard" description:@"Toronto, ON, Canada"];
+	Developer *maziar = [[Developer alloc] initWithName:@"Maziar" description:@"North York, ON, Canada"];
+	
+	self.developers = [[NSMutableArray alloc] initWithObjects:talha, lenard, maziar, nil];
 	
 	// Configure and show the window
 	[window addSubview:[navigationController view]];
