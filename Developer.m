@@ -10,5 +10,12 @@
 
 
 @implementation Developer
+@synthesize name, description;
+
+-(id)initWithName: (NSString *)n description:(NSString *)desc {
+	self.name = n;
+	self.description = desc;
+	return self;
+}
 
 @end
