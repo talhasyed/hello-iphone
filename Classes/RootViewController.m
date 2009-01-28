@@ -7,17 +7,24 @@
 //
 
 #import "RootViewController.h"
+
+#import "AboutPageViewController.h"
 #import "DeveloperAppDelegate.h"
 #import "Developer.h"
 
 
 @implementation RootViewController
 @synthesize developerView;
+// @synthesize modalView;
+
+-(void)awakeFromNib
+{
+	modalViewController = [[AboutPageViewController alloc] initWithNibName:@"About" bundle:nil];
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	DeveloperAppDelegate *appDelegate = (DeveloperAppDelegate *)[[UIApplication sharedApplication] delegate];

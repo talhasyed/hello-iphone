@@ -8,11 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "DeveloperViewController.h"
+#import "AboutPageViewController.h"
+
+@class AboutPageViewController;
 
 @interface RootViewController : UITableViewController {
 	DeveloperViewController *developerView;
+	
+	AboutPageViewController	*modalViewController;
+	//dhbdd;
 }
 
 @property(nonatomic, retain) DeveloperViewController *developerView;
+@property(nonatomic, retain) AboutPageViewController *modalView;
 
 @end

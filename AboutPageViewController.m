@@ -8,7 +8,6 @@
 
 #import "AboutPageViewController.h"
 
-
 @implementation AboutPageViewController
 
 
