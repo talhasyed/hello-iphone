@@ -76,7 +76,7 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
 		DeveloperAppDelegate *appDelegate = (DeveloperAppDelegate *)[[UIApplication sharedApplication] delegate];
-		[appDelegate.developers removeObjectAtIndex:0];
+		[appDelegate.developers removeObjectAtIndex:indexPath.row];
 		NSLog(@"HEYYYY LOGGGING");
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
     }   
