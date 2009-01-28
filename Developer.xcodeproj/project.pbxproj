@@ -15,6 +15,7 @@
 		2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* RootViewController.xib */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		BC4DA13F0F30374700A5B9CD /* AboutPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4DA13E0F30374700A5B9CD /* AboutPageViewController.m */; };
 		BC6FB5550F2E60A800882B94 /* DeveloperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6FB5540F2E60A800882B94 /* DeveloperViewController.xib */; };
 		BC6FB5590F2E60DB00882B94 /* DeveloperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6FB5580F2E60DB00882B94 /* DeveloperViewController.m */; };
 		BC8B01B30F2E4519000ECEFE /* Developer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8B01B20F2E4519000ECEFE /* Developer.m */; };
@@ -34,6 +35,8 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC4DA13D0F30374700A5B9CD /* AboutPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPageViewController.h; sourceTree = "<group>"; };
+		BC4DA13E0F30374700A5B9CD /* AboutPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPageViewController.m; sourceTree = "<group>"; };
 		BC6FB5540F2E60A800882B94 /* DeveloperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeveloperViewController.xib; sourceTree = "<group>"; };
 		BC6FB5570F2E60DB00882B94 /* DeveloperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeveloperViewController.h; sourceTree = "<group>"; };
 		BC6FB5580F2E60DB00882B94 /* DeveloperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeveloperViewController.m; sourceTree = "<group>"; };
@@ -77,6 +80,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				BC4DA13D0F30374700A5B9CD /* AboutPageViewController.h */,
+				BC4DA13E0F30374700A5B9CD /* AboutPageViewController.m */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -187,6 +192,7 @@
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				BC8B01B30F2E4519000ECEFE /* Developer.m in Sources */,
 				BC6FB5590F2E60DB00882B94 /* DeveloperViewController.m in Sources */,
+				BC4DA13F0F30374700A5B9CD /* AboutPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
