@@ -11,15 +11,15 @@
 
 @implementation AboutPageViewController
 
-/*
+
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         // Custom initialization
+		self.title = @"About";
     }
     return self;
 }
-*/
 
 /*
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
@@ -27,12 +27,16 @@
 }
 */
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    // [super viewDidLoad];
+	
+	// self.view.backgroundColor = [UIColor whiteColor];	// use the table view background color
+	
+	appName.text = @"Developers, Developers, Developers, YEAAAAAH!!!";
+	copyright.text = @"Kaboose Inc";
+	
 }
-*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -50,6 +54,11 @@
 
 - (void)dealloc {
     [super dealloc];
+}
+
+- (IBAction)dismissAction:(id)sender
+{
+	[self.navigationController dismissModalViewControllerAnimated:YES];
 }
 
 
