@@ -12,14 +12,29 @@
 #import "DeveloperAppDelegate.h"
 #import "Developer.h"
 
-
 @implementation RootViewController
 @synthesize developerView;
+@synthesize	modalViewController;
 // @synthesize modalView;
 
 -(void)awakeFromNib
 {
 	modalViewController = [[AboutPageViewController alloc] initWithNibName:@"About" bundle:nil];
+	
+	UIButton* modalViewButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+	[modalViewButton addTarget:self action:@selector(modalViewAction:) forControlEvents:UIControlEventTouchUpInside];
+	UIBarButtonItem *modalButton = [[UIBarButtonItem alloc] initWithCustomView:modalViewButton];
+	self.navigationItem.rightBarButtonItem = modalButton;
+	[modalViewButton release];
+}
+
+// user clicked the "i" button, present page six as modal UIViewController
+- (IBAction)modalViewAction:(id)sender
+{
+	// present page six as a modal child or overlay view
+	NSLog(@"heremodal");
+	[[self navigationController] presentModalViewController:modalViewController animated:YES];
+	NSLog(@"heremodal2");
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

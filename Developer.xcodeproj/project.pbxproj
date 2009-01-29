@@ -36,8 +36,8 @@
 		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC4DA13D0F30374700A5B9CD /* AboutPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPageViewController.h; sourceTree = "<group>"; };
-		BC4DA13E0F30374700A5B9CD /* AboutPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPageViewController.m; sourceTree = "<group>"; };
+		BC4DA13D0F30374700A5B9CD /* AboutPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutPageViewController.h; path = ../AboutPageViewController.h; sourceTree = "<group>"; };
+		BC4DA13E0F30374700A5B9CD /* AboutPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutPageViewController.m; path = ../AboutPageViewController.m; sourceTree = "<group>"; };
 		BC4DA14A0F3039F300A5B9CD /* AboutPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutPageViewController.xib; sourceTree = "<group>"; };
 		BC6FB5540F2E60A800882B94 /* DeveloperViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeveloperViewController.xib; sourceTree = "<group>"; };
 		BC6FB5570F2E60DB00882B94 /* DeveloperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeveloperViewController.h; sourceTree = "<group>"; };
@@ -63,6 +63,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BC4DA13D0F30374700A5B9CD /* AboutPageViewController.h */,
+				BC4DA13E0F30374700A5B9CD /* AboutPageViewController.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* DeveloperAppDelegate.h */,
@@ -82,9 +84,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				BC4DA14A0F3039F300A5B9CD /* AboutPageViewController.xib */,
-				BC4DA13D0F30374700A5B9CD /* AboutPageViewController.h */,
-				BC4DA13E0F30374700A5B9CD /* AboutPageViewController.m */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -112,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
+				BC4DA14A0F3039F300A5B9CD /* AboutPageViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);

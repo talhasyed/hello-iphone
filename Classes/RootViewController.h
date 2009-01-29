@@ -20,6 +20,6 @@
 }
 
 @property(nonatomic, retain) DeveloperViewController *developerView;
-@property(nonatomic, retain) AboutPageViewController *modalView;
+@property(nonatomic, retain) AboutPageViewController *modalViewController;
 
 @end
